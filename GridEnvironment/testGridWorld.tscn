@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://GridEnvironment/GridWorldTest.gd" type="Script" id=1]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
+
+[node name="World" type="Spatial"]
+script = ExtResource( 1 )
+worldSize = Vector2( 328, 328 )
+halfChunkLength = 20.5
+
+[node name="Player" parent="." instance=ExtResource( 2 )]

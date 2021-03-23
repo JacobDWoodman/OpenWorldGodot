@@ -19,6 +19,16 @@ _global_script_classes=[ {
 "language": "GDScript",
 "path": "res://Terrain/Entity/DudeCreator.gd"
 }, {
+"base": "Node",
+"class": "EnvironmentGrid",
+"language": "GDScript",
+"path": "res://GridEnvironment/EnvironmentGrid.gd"
+}, {
+"base": "Node",
+"class": "EnvironmentNode",
+"language": "GDScript",
+"path": "res://GridEnvironment/EnvironmentNode.gd"
+}, {
 "base": "Spatial",
 "class": "OWChunk",
 "language": "GDScript",
@@ -32,6 +42,8 @@ _global_script_classes=[ {
 _global_script_class_icons={
 "Collectible": "",
 "Dude": "",
+"EnvironmentGrid": "",
+"EnvironmentNode": "",
 "OWChunk": "",
 "TreeEntity": ""
 }
@@ -39,7 +51,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Death Stranding"
-run/main_scene="res://Terrain/World2.tscn"
+run/main_scene="res://GridEnvironment/testGridWorld.tscn"
 config/icon="res://icon.png"
 
 [autoload]
