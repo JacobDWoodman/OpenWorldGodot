@@ -1,0 +1,63 @@
+[
+  {
+    "z": 0, "x": 0, "obj": "NPC", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}},
+  {
+    "z": 64, "x": 0, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 128, "x": 0, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
+  { "z": 192, "x": 0, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
+  {
+    "z": 256, "x": 0, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
+  { "z": 320, "x": 0, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
+  {
+    "z": 0, "x": 64, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 64, "x": 64, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 128, "x": 64, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 192, "x": 64, "obj": "item" , "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 256, "x": 64, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 320, "x": 64, "obj": "item" , "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 0, "x": 128, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 64, "x": 128, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 128, "x": 128, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 192, "x": 128, "obj": "item" , "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 256, "x": 128, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 320, "x": 128, "obj": "item" , "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 0, "x": 192, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 64, "x": 192, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 128, "x": 192, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 192, "x": 192, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
+  {
+    "z": 256, "x": 192, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 320, "x": 192, "obj": "item" , "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 0, "x": 256, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 64, "x": 256, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 128, "x": 256, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 192, "x": 256, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
+  {
+    "z": 256, "x": 256, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 320, "x": 256, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
+  {
+    "z": 0, "x": 320, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 64, "x": 320, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 128, "x": 320, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 192, "x": 320, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
+  {
+    "z": 256, "x": 320, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+  {
+    "z": 320, "x": 320, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} }
+]

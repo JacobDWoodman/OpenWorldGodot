@@ -1,0 +1,52 @@
+[gd_scene load_steps=6 format=2]
+
+[ext_resource path="res://Terrain/World.gd" type="Script" id=1]
+[ext_resource path="res://icon.png" type="Texture" id=2]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Terrain/Entity/Dude.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Dialogue/txt/ace_attorney.tres" type="DynamicFont" id=5]
+
+[node name="World" type="Spatial"]
+script = ExtResource( 1 )
+file_path = "res://data/chunks.json"
+item_file_path = "res://data/items.json"
+
+[node name="Player" parent="." instance=ExtResource( 3 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 50, 0.163723 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+visible = false
+margin_left = 928.0
+margin_top = 508.0
+margin_right = 992.0
+margin_bottom = 572.0
+rect_scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="txt" type="RichTextLabel" parent="CanvasLayer"]
+margin_left = 45.0
+margin_top = 32.0
+margin_right = 308.0
+margin_bottom = 243.0
+custom_fonts/mono_font = ExtResource( 5 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, -0.912656, 0.408729, 0, -0.408729, -0.912656, 0, 50, 0 )
+shadow_enabled = true
+shadow_color = Color( 0, 0.235294, 0.290196, 1 )
+
+[node name="DirectionalLight2" type="DirectionalLight" parent="."]
+transform = Transform( 0.733022, 0.281629, 0.619164, 0.0145727, -0.916554, 0.399645, 0.680048, -0.283926, -0.675959, 14.1131, 50, 0 )
+light_energy = 0.5
+
+[node name="Dude" parent="." instance=ExtResource( 4 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.25619, 0 )
+visible = false
