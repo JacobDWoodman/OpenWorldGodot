@@ -1,7 +1,6 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Terrain/World.gd" type="Script" id=1]
-[ext_resource path="res://icon.png" type="Texture" id=2]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=3]
 [ext_resource path="res://Terrain/Entity/Dude.tscn" type="PackedScene" id=4]
 [ext_resource path="res://Dialogue/txt/ace_attorney.tres" type="DynamicFont" id=5]
@@ -15,18 +14,6 @@ item_file_path = "res://data/items.json"
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 50, 0.163723 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
-
-[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
-visible = false
-margin_left = 928.0
-margin_top = 508.0
-margin_right = 992.0
-margin_bottom = 572.0
-rect_scale = Vector2( 0.1, 0.1 )
-texture = ExtResource( 2 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
 
 [node name="txt" type="RichTextLabel" parent="CanvasLayer"]
 margin_left = 45.0

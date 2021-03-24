@@ -30,3 +30,46 @@ func createGrid():
 			print("made new node at (" + str(x) + ", " + str(z) + ")" + str(i))
 			i += 1
 
+func getNeighbours(node, distance):
+	var neighbours = []
+	
+	for x in range(-distance, distance+1):
+		for z in range(-distance, distance+1):
+			if (x == 0 && z == 0): 
+				pass
+			var checkX = node.gridX + x
+			var checkZ = node.gridZ + z
+			if(checkX >= 0 && checkX < gridSizeX && checkZ >= 0 && checkZ < gridSizeZ):
+				for noode in grid:
+					if (noode.gridX == checkX && noode.gridZ == checkZ):
+						neighbours.append(noode)
+	return neighbours
+
+func NodeFromWorldPoint(worldPosition):
+	var percent = Vector2((worldPosition.x + gridWorldSize.x/2)/gridWorldSize.x, (worldPosition.z + gridWorldSize.y/2)/gridWorldSize.y)
+	
+	percent.x = clamp(percent.x, 0, 1)
+	percent.y = clamp(percent.y, 0, 1)
+	
+	var x = int(round((gridSizeX - 1) * percent.x))
+	var z = int(round((gridSizeZ - 1) * percent.y))
+	
+	for noode in grid:
+		if(noode.gridX == x && noode.gridZ == z):
+			return noode
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -5,7 +5,31 @@
 
 [node name="World" type="Spatial"]
 script = ExtResource( 1 )
-worldSize = Vector2( 328, 328 )
+file_path = "res://data/chunksGrid.json"
+item_file_path = "res://data/itemsGrid.json"
+worldSize = Vector2( 246, 246 )
 halfChunkLength = 20.5
+chunkRenderDistance = 3
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 4.67713, 21.9414, -3.42864 )
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+
+[node name="txt" type="RichTextLabel" parent="CanvasLayer"]
+margin_left = 45.0
+margin_top = 32.0
+margin_right = 308.0
+margin_bottom = 243.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="DirectionalLight" type="DirectionalLight" parent="."]
+transform = Transform( 1, 0, 0, 0, 0.754034, 0.656836, 0, -0.656836, 0.754034, 0, 10.7778, 0 )
+light_color = Color( 0.870588, 1, 0.980392, 1 )
+shadow_enabled = true
+
+[node name="DirectionalLight2" type="DirectionalLight" parent="."]
+transform = Transform( 0.830994, 0.365385, -0.419455, 0, 0.754034, 0.656836, 0.556281, -0.545827, 0.626598, 0, 10.7778, 0 )
+light_color = Color( 0.788235, 1, 0.886275, 1 )
