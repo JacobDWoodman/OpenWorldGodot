@@ -9,7 +9,7 @@ file_path = "res://data/chunksGrid.json"
 item_file_path = "res://data/itemsGrid.json"
 worldSize = Vector2( 246, 246 )
 halfChunkLength = 20.5
-chunkRenderDistance = 1
+chunkRenderDistance = 2
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 123, 21.941, 123 )

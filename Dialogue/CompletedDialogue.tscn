@@ -7,7 +7,7 @@
 
 [node name="Dialogue" type="Node"]
 script = ExtResource( 4 )
-file_path = "res://data/Dialogue.json"
+file_path = "res://data/CompletedDialogue .json"
 
 [node name="textbox" type="TextureRect" parent="."]
 margin_right = 40.0

@@ -11,9 +11,11 @@ var grid
 onready var chunk_data : Array = load_chunk_data(file_path)
 onready var item_data : Array = load_chunk_data(item_file_path)
 
+var chunks = {}
+var unready_chunks = {}
+
 var nearby_nodes = []
 var loaded_nodes = []
-var loaded_chunks = []
 var thread
 
 # Called when the node enters the scene tree for the first time.
@@ -33,12 +35,27 @@ func update_chunks():
 	for nnode in grid.getNeighbours(p_trans, chunkRenderDistance):
 		nearby_nodes.append(nnode)
 		create_chunk(nnode)
+		var chunk = get_chunk(nnode.worldPos)
+		if chunk != null:
+			chunk.should_remove = false
 
 func create_chunk(node):
-	if loaded_nodes.has(node.worldPos):
-		return #dont make a chunk that already exists
+	var key = str(node.worldPos)
+	#if this chunk's key already exists
+	#then this chunk is already loaded or is loading
+	if chunks.has(key) or unready_chunks.has(key):
+		return
 	
-	thread.start(self, "load_chunk",[thread, node])
+	if not thread.is_active():
+		thread.start(self, "load_chunk",[thread, node])
+		unready_chunks[key] = 1
+
+func get_chunk(pos):
+	var key = str(pos)
+	if chunks.has(key):
+		return chunks.get(key)
+	
+	return null
 
 func load_chunk(arr):
 	var nthread = arr[0]#more readable this way
@@ -46,7 +63,7 @@ func load_chunk(arr):
 	var i = 0
 	for arraypos in chunk_data:
 		if(arraypos["x"] == node.gridX && arraypos["z"] == node.gridZ ):
-			var chunk = OWChunk.new(node.gridX, node.gridZ, arraypos["path"])
+			var chunk = OWChunk.new(node.gridX, node.gridZ, arraypos["path"], str(node.worldPos))
 			chunk.translation = arr[1].worldPos
 			var item
 			if(item_data[i]["exists"] && !GameStats.collected[i]):
@@ -64,37 +81,24 @@ func load_done(chunk, item, thread):
 	print("lez goooo")
 	add_child(chunk)
 	chunk.add_child(item)
+	
+	var key = chunk.key
+	chunks[key] = chunk
+	unready_chunks.erase(key)
 	loaded_nodes.append(chunk.translation)
-	loaded_chunks.append(chunk)
 	thread.wait_to_finish()
 
-func clean_up_chunks0():
-	var i = 0
-	
-	for chunktr in loaded_nodes:
-		var in_range = false
-		for node in nearby_nodes:
-			if node.worldPos == chunktr:
-				var pos = node.worldPos
-				in_range = true
-		if !in_range:
-			loaded_nodes.erase(chunktr)
-			loaded_chunks[i].queue_free()
-		i += 1
-
 func clean_up_chunks():
-	for chunk in loaded_chunks:
-		for node in nearby_nodes:
-			if(chunk.translation == node.worldPos):
-				chunk.should_remove = false
-				break
-			if (chunk.should_remove):
-				chunk.queue_free()
-				loaded_chunks.erase(chunk)
+	for key in chunks:
+		var chunk = chunks[key]
+		if chunk.should_remove:
+			print(chunk.key)
+			chunk.queue_free()
+			chunks.erase(key)
 
 func reset_chunks():
-	for chunk in loaded_chunks:
-		chunk.should_remove = true
+	for key in chunks:
+		chunks[key].should_remove = true
 
 func load_chunk_data(f_path):
 	var file = File.new()
