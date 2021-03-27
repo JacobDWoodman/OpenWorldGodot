@@ -64,7 +64,6 @@ func load_chunk(arr):
 	var i = 0
 	for arraypos in chunk_data:
 		if(arraypos["x"] == arr[1]* 64 && arraypos["z"] == arr[2]* 64 ):
-			print("scooby")
 			#var chunk = load("res://chunks/tscn/chunk"+arraypos["path"]+".tscn")
 			var chunk = OWChunk.new(arr[1], arr[2], arraypos["path"])
 			chunk.translation = Vector3(arr[1] * chunk_size, 0, arr[2] * chunk_size)

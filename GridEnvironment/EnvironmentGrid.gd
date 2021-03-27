@@ -35,8 +35,8 @@ func getNeighbours(node, distance):
 	
 	for x in range(-distance, distance+1):
 		for z in range(-distance, distance+1):
-			if (x == 0 && z == 0): 
-				pass
+			#if (x == 0 && z == 0): 
+			#	pass
 			var checkX = node.gridX + x
 			var checkZ = node.gridZ + z
 			if(checkX >= 0 && checkX < gridSizeX && checkZ >= 0 && checkZ < gridSizeZ):
@@ -46,7 +46,7 @@ func getNeighbours(node, distance):
 	return neighbours
 
 func NodeFromWorldPoint(worldPosition):
-	var percent = Vector2((worldPosition.x + gridWorldSize.x/2)/gridWorldSize.x, (worldPosition.z + gridWorldSize.y/2)/gridWorldSize.y)
+	var percent = Vector2((worldPosition.x + gridWorldSize.x/2)/gridWorldSize.x, ((worldPosition.z * -1) + gridWorldSize.y/2)/gridWorldSize.y)
 	
 	percent.x = clamp(percent.x, 0, 1)
 	percent.y = clamp(percent.y, 0, 1)
@@ -54,9 +54,9 @@ func NodeFromWorldPoint(worldPosition):
 	var x = int(round((gridSizeX - 1) * percent.x))
 	var z = int(round((gridSizeZ - 1) * percent.y))
 	
-	for noode in grid:
-		if(noode.gridX == x && noode.gridZ == z):
-			return noode
+	for nnode in grid:
+		if(nnode.gridX == x && nnode.gridZ == z):
+			return nnode
 
 
 

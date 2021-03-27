@@ -1,0 +1,45 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Dialogue/txt/ace_attorney.tres" type="DynamicFont" id=1]
+[ext_resource path="res://Dialogue/sprites/dialoguebox.png" type="Texture" id=2]
+[ext_resource path="res://Dialogue/label.gd" type="Script" id=3]
+[ext_resource path="res://Dialogue/DialogueBox.gd" type="Script" id=4]
+
+[node name="Dialogue" type="Node"]
+script = ExtResource( 4 )
+file_path = "res://data/Dialogue.json"
+
+[node name="textbox" type="TextureRect" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+texture = ExtResource( 2 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 50.0
+margin_top = 800.0
+margin_right = 524.0
+margin_bottom = 838.0
+custom_fonts/font = ExtResource( 1 )
+text = "cum in a glass call that a goblet"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 50.0
+margin_top = 850.0
+margin_right = 1870.0
+margin_bottom = 1030.0
+custom_fonts/normal_font = ExtResource( 1 )
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.05
+autostart = true
+[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

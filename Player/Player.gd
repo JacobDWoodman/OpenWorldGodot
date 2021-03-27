@@ -50,7 +50,7 @@ func process_input(delta):
 		input_movement_vector.x -= 1
 	if Input.is_action_pressed("MOVE_RIGHT"):
 		input_movement_vector.x += 1
-	if Input.is_action_pressed("toggle_grav"):
+	if Input.is_action_just_released("toggle_grav"):
 		grav_on = !grav_on
 
 	input_movement_vector = input_movement_vector.normalized()
