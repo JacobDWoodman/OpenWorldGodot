@@ -1,63 +1,63 @@
 [
   {
-    "z": 0, "x": 0, "obj": "NPC", "exists": true,  "position":{"x":0.0,"y":1.0,"z":0.0}},
+    "z": 0, "x": 0, "obj": "NPC", "position":{"x":0.0,"y":1.0,"z":0.0}},
   {
-    "z": 1, "x": 0, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 1, "x": 0, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 2, "x": 0, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
-  { "z": 3, "x": 0, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
+    "z": 2, "x": 0, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0}  },
+  { "z": 3, "x": 0, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0}  },
   {
-    "z": 4, "x": 0, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
-  { "z": 5, "x": 0, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
+    "z": 4, "x": 0, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0}  },
+  { "z": 5, "x": 0, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0}  },
   {
-    "z": 0, "x": 1, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 0, "x": 1, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 1, "x": 1, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 1, "x": 1, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 2, "x": 1, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
-  { "z": 3, "x": 1, "obj": "item" , "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 2, "x": 1, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 3, "x": 1, "obj": "item" , "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 4, "x": 1, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
-  { "z": 5, "x": 1, "obj": "item" , "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 4, "x": 1, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 5, "x": 1, "obj": "item" , "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 0, "x": 2, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 0, "x": 2, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 1, "x": 2, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 1, "x": 2, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 2, "x": 2, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
-  { "z": 3, "x": 2, "obj": "item" , "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 2, "x": 2, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 3, "x": 2, "obj": "item" , "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 4, "x": 2, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
-  { "z": 5, "x": 2, "obj": "item" , "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 4, "x": 2, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 5, "x": 2, "obj": "item" , "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 0, "x": 3, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 0, "x": 3, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 1, "x": 3, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 1, "x": 3, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 2, "x": 3, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
-  { "z": 3, "x": 3, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
+    "z": 2, "x": 3, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 3, "x": 3, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0}  },
   {
-    "z": 4, "x": 3, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
-  { "z": 5, "x": 3, "obj": "item" , "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 4, "x": 3, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 5, "x": 3, "obj": "item" , "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 0, "x": 4, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 0, "x": 4, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 1, "x": 4, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 1, "x": 4, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 2, "x": 4, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
-  { "z": 3, "x": 4, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
+    "z": 2, "x": 4, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 3, "x": 4, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0}  },
   {
-    "z": 4, "x": 4, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
-  { "z": 5, "x": 4, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
+    "z": 4, "x": 4, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 5, "x": 4, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0}  },
   {
-    "z": 0, "x": 5, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 0, "x": 5, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 1, "x": 5, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 1, "x": 5, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 2, "x": 5, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
-  { "z": 3, "x": 5, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0}  },
+    "z": 2, "x": 5, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
+  { "z": 3, "x": 5, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0}  },
   {
-    "z": 4, "x": 5, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} },
+    "z": 4, "x": 5, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} },
   {
-    "z": 5, "x": 5, "obj": "item", "exists": true,  "position":{"x":0.0,"y":10.0,"z":0.0} }
+    "z": 5, "x": 5, "obj": "item", "position":{"x":0.0,"y":10.0,"z":0.0} }
 ]

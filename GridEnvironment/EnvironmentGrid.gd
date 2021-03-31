@@ -20,14 +20,12 @@ func _init(_gridWorldSize, _nodeRadius, _position):
 	createGrid()
 
 func createGrid():
-	
 	var worldBottomLeft = position - Vector3.RIGHT * gridWorldSize.x / 2 - Vector3.FORWARD * gridWorldSize.y / 2
 	var i = 0
 	for x in gridSizeX:
 		for z in gridSizeZ:
 			var worldPoint = worldBottomLeft + Vector3.RIGHT * (x * nodeDiameter + nodeRadius) + Vector3.FORWARD * (z * nodeDiameter + nodeRadius)
 			grid.append(EnvironmentNode.new(worldPoint, x, z))
-			print("made new node at (" + str(x) + ", " + str(z) + ")" + str(i))
 			i += 1
 
 func getNeighbours(node, distance):
@@ -35,8 +33,6 @@ func getNeighbours(node, distance):
 	
 	for x in range(-distance, distance+1):
 		for z in range(-distance, distance+1):
-			#if (x == 0 && z == 0): 
-			#	pass
 			var checkX = node.gridX + x
 			var checkZ = node.gridZ + z
 			if(checkX >= 0 && checkX < gridSizeX && checkZ >= 0 && checkZ < gridSizeZ):

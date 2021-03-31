@@ -41,8 +41,6 @@ func update_chunks():
 
 func create_chunk(node):
 	var key = str(node.worldPos)
-	#if this chunk's key already exists
-	#then this chunk is already loaded or is loading
 	if chunks.has(key) or unready_chunks.has(key):
 		return
 	
@@ -66,7 +64,7 @@ func load_chunk(arr):
 			var chunk = OWChunk.new(node.gridX, node.gridZ, arraypos["path"], str(node.worldPos))
 			chunk.translation = arr[1].worldPos
 			var item
-			if(item_data[i]["exists"] && !GameStats.collected[i]):
+			if(!GameStats.collected[i]):
 				match item_data[i]["obj"]:
 					"item":
 						item = Collectible.new(i)
@@ -78,7 +76,6 @@ func load_chunk(arr):
 		else: i += 1
 
 func load_done(chunk, item, thread):
-	print("lez goooo")
 	add_child(chunk)
 	chunk.add_child(item)
 	
