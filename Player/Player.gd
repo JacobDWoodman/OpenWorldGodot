@@ -1,7 +1,7 @@
 extends KinematicBody
 #from https://docs.godotengine.org/en/stable/tutorials/3d/fps_tutorial/part_one.html
 
-export(bool) var grav_on = false
+export(bool) var grav_on = true
 const GRAVITY = -24.8 * 2
 var vel = Vector3()
 const MAX_SPEED = 20 
@@ -50,8 +50,8 @@ func process_input(delta):
 		input_movement_vector.x -= 1
 	if Input.is_action_pressed("MOVE_RIGHT"):
 		input_movement_vector.x += 1
-	if Input.is_action_just_released("toggle_grav"):
-		grav_on = !grav_on
+	#if Input.is_action_just_released("toggle_grav"):
+	#	grav_on = !grav_on
 
 	input_movement_vector = input_movement_vector.normalized()
 

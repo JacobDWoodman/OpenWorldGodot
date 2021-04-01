@@ -12,15 +12,15 @@ halfChunkLength = 20.5
 chunkRenderDistance = 2
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 123, 21.941, 123 )
+transform = Transform( 1, 0, 0, 0, 1, 0, 0, 0, 1, 120.98, 15.023, 110.933 )
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
 [node name="txt" type="RichTextLabel" parent="CanvasLayer"]
-margin_left = 45.0
-margin_top = 32.0
-margin_right = 308.0
-margin_bottom = 243.0
+margin_left = 885.0
+margin_top = 550.0
+margin_right = 1035.0
+margin_bottom = 600.0
 __meta__ = {
 "_edit_use_anchors_": false
 }

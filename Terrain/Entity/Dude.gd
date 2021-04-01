@@ -15,3 +15,5 @@ func _on_Area_body_entered(body):
 func _on_Area_body_exited(body):
 	if(body.get_name() == "Player"):
 		doug.queue_free()
+	if GameStats.has_enough_drinks:
+		get_tree().change_scene("res://path/to/scene.tscn")

@@ -77,7 +77,8 @@ func load_chunk(arr):
 
 func load_done(chunk, item, thread):
 	add_child(chunk)
-	chunk.add_child(item)
+	if(item != null):
+		chunk.add_child(item)
 	
 	var key = chunk.key
 	chunks[key] = chunk
@@ -89,7 +90,6 @@ func clean_up_chunks():
 	for key in chunks:
 		var chunk = chunks[key]
 		if chunk.should_remove:
-			print(chunk.key)
 			chunk.queue_free()
 			chunks.erase(key)
 

@@ -9,5 +9,5 @@ onready var collected = [false, false, false, false, false, false, false, false,
 func collect_item():
 	collectibles_collected += 1;
 	get_tree().get_current_scene().get_node("CanvasLayer/txt").set_bbcode("Drinks Collected: "+ str(collectibles_collected))
-	if collectibles_collected <= 30:
+	if collectibles_collected >= 30:
 		has_enough_drinks = true

@@ -51,7 +51,7 @@ _global_script_class_icons={
 [application]
 
 config/name="Death Stranding"
-run/main_scene="res://GridEnvironment/testGridWorld.tscn"
+run/main_scene="res://menu/MainMenu.tscn"
 config/icon="res://icon.png"
 
 [autoload]
