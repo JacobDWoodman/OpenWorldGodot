@@ -1,56 +1,29 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=3 uid="uid://cryg6w7echjpd"]
 
-[ext_resource path="res://Dialogue/sprites/exoBoots.png" type="Texture" id=1]
-[ext_resource path="res://Dialogue/txt/ace_attorney.tres" type="DynamicFont" id=2]
-[ext_resource path="res://icon.png" type="Texture" id=3]
-[ext_resource path="res://menu/MainMenu.gd" type="Script" id=4]
+[ext_resource type="Texture2D" uid="uid://biping7yj7xr4" path="res://Dialogue/sprites/exoBoots.png" id="1"]
+[ext_resource type="Texture2D" uid="uid://betwo3gfhyxcq" path="res://icon.png" id="3"]
+[ext_resource type="Script" path="res://menu/MainMenu.gd" id="4"]
 
 [node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -6.68079
-margin_right = -6.68079
-script = ExtResource( 4 )
-__meta__ = {
-"_edit_use_anchors_": false
-}
+script = ExtResource("4")
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
-margin_left = 624.355
-margin_top = 294.234
-margin_right = 1219.36
-margin_bottom = 487.234
-custom_fonts/mono_font = ExtResource( 2 )
-custom_fonts/normal_font = ExtResource( 2 )
-bbcode_text = "Find Drinks for Mr Drinker"
+layout_mode = 0
 text = "Find Drinks for Mr Drinker"
 
 [node name="PlayB" type="Button" parent="."]
-margin_left = 613.416
-margin_top = 411.099
-margin_right = 1209.42
-margin_bottom = 585.099
-custom_fonts/font = ExtResource( 2 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_color_hover = Color( 0, 0.952941, 1, 1 )
-custom_colors/font_color_pressed = Color( 0, 0.301961, 0.501961, 1 )
+layout_mode = 0
 text = "Play"
-icon = ExtResource( 3 )
-__meta__ = {
-"_edit_use_anchors_": false,
-"_editor_description_": ""
-}
+icon = ExtResource("3")
 
 [node name="Quit" type="Button" parent="."]
-margin_left = 28.3931
-margin_top = 967.036
-margin_right = 421.393
-margin_bottom = 1057.04
-custom_fonts/font = ExtResource( 2 )
-custom_colors/font_color = Color( 1, 1, 1, 1 )
-custom_colors/font_color_hover = Color( 0, 0.952941, 1, 1 )
-custom_colors/font_color_pressed = Color( 0, 0.301961, 0.501961, 1 )
+layout_mode = 0
 text = "Quit"
-icon = ExtResource( 1 )
+icon = ExtResource("1")
+
 [connection signal="pressed" from="PlayB" to="." method="_on_PlayB_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_Quit_pressed"]
